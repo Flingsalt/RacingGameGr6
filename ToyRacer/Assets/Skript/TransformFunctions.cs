@@ -76,7 +76,7 @@ public class TransformFunctions : MonoBehaviour
 			}
 		}
 
-		if (Input.GetKey(KeyCode.S))
+		if (Input.GetKey(KeyCode.S) && standScript.state == true)
 		{
 			transform.Translate(Vector3.forward * -moveSpeed * Time.deltaTime);
 			inReverse = true;
